@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  background: #000 !important;
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #000 60%, #111 100%) !important;
+}
+
+main {
+  background: transparent !important;
+}
+
+.card, .glass, .glassmorphic {
+  background: rgba(20, 20, 20, 0.85) !important;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.7), 0 1.5px 8px 0 rgba(0,0,0,0.5);
+  border: 1px solid rgba(60,60,60,0.5);
+  backdrop-filter: blur(12px);
+}
+
+.prose, .prose-invert {
+  color: #e5e5e5 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Remove any white backgrounds from forms, buttons, etc. */
+input, textarea, select, button {
+  background: #181818 !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
+}
+
+/* Remove focus outlines for a more polished look */
+*:focus {
+  outline: 2px solid #00ffae !important;
+  outline-offset: 2px;
+}
+
+/* Glassy header/footer */
+header, footer {
+  background: rgba(10,10,10,0.85) !important;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.7);
+  border: 1px solid rgba(60,60,60,0.5);
+  backdrop-filter: blur(8px);
+}
+
+/* Remove white backgrounds from Next.js default error overlays */
+.next-error-overlay {
+  background: #000 !important;
+  color: #fff !important;
+}

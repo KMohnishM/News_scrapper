@@ -1,4 +1,38 @@
-# Node.js (Next.js frontend)
+# ========================
+# 🌐 General
+# ========================
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+
+# ========================
+# 💻 IDEs
+# ========================
+.vscode/
+.idea/
+
+# ========================
+# 🐍 Python / Django (backend/)
+# ========================
+backend/__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.migrations/
+backend/venv/
+backend/db.sqlite3
+backend/.env
+backend/.env.*
+backend/celerybeat-schedule
+backend/staticfiles/
+backend/media/
+
+# ========================
+# 🟢 Node.js / Next.js (frontend/)
+# ========================
 frontend/node_modules/
 frontend/.next/
 frontend/out/
@@ -6,30 +40,14 @@ frontend/.env
 frontend/.env.local
 frontend/.env.*.local
 frontend/.vercel/
+frontend/.eslintcache
+frontend/dist/
+frontend/build/
 frontend/.DS_Store
+frontend/package-lock.json
 
-# Python (Django backend)
-backend/venv/
-backend/__pycache__/
-backend/db.sqlite3
-backend/*.pyc
-backend/*.pyo
-backend/*.pyd
-backend/.env
-backend/.env.*
-backend/celerybeat-schedule
-backend/staticfiles/
-backend/media/
-backend/.DS_Store
-
-# System
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# IDEs
-.vscode/
-.idea/
-*.swp
+# ========================
+# 📦 Optional Global Ignore
+# ========================
+.env
+.env.*

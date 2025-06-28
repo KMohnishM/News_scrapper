@@ -133,7 +133,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 # News API and LLM Summarization settings
 NEWSAPI_KEY = '87cf1dd6a3354d0286fc85361e00feb5'
 LLM_SUMMARIZATION_URL = 'http://localhost:8001/summarize'
-OPENROUTER_API_KEY = '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'
+OPENROUTER_API_KEY = '12858469ee3599bc1b1bbd4245139b375236e3165c2518b63e2520067106112b-1v-ro-ks'
 INSTALLED_APPS += ['corsheaders']
 MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware'] + MIDDLEWARE
 CORS_ALLOW_ALL_ORIGINS = True  # For development only!
